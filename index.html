@@ -26,7 +26,7 @@
                     <a href="./index.html" class="logo"><span>Web</span>Studio</a>
                     <ul class="site-nav list link-site">
                         <li class="test-list">
-                            <a href="./index.html" class="nav carrent">Студія</a>
+                            <a href="./index.html" class="nav carrent menu-link">Студія</a>
                         </li>
                         <li class="test-list">
                             <a href="./portfolio.html" class="nav color">Портфоліо</a>
@@ -76,7 +76,11 @@
             <section class="baner">
                 <div class="conteiner hero-title">
                     <h1 class="hero">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                    <button type="button" class="button button-baner">Замовити послугу</button>
+                    
+                    <button data-modal-open type="button" class="button button-baner">Замовити послугу</button>
+                    
+                    
+                    
                 </div>
                 
             </section>
@@ -151,19 +155,35 @@
                       <div class="work-list">
                            <ul class="list-works">
                                <li class="content">
-                                <img src="./images/img1.jpg" alt="photo first" width="370">
-                                </li>
+                                <div class="work-thumb">
+                                    <img src="./images/img1.jpg" alt="photo first" width="370">
+                                    <div class="work-overlay">
+                                        <h2 class="work-text">ДЕСКТОПНІ ДОДАТКИ</h2>
+                                    </div>
+                                </div>
+                                
+                               </li>
                             </ul>
         
                             <ul class="list-works">
                                  <li class="content">
-                                <img src="./images/img2.jpg" alt="photo second" width="370">
+                                <div class="work-thumb">
+                                    <img src="./images/img2.jpg" alt="photo second" width="370">
+                                    <div class="work-overlay">
+                                        <h2 class="work-text">МОБІЛЬНІ ДОДАТКИ</h2>
+                                    </div>
+                                </div>
                                 </li>
                              </ul>
         
                             <ul class="list-works">
                                 <li class="content">
-                                <img src="./images/img3.jpg" alt="photo third" width="370">
+                                <div class="work-thumb">
+                                    <img src="./images/img3.jpg" alt="photo third" width="370">
+                                    <div class="work-overlay">
+                                        <h2 class="work-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h2>
+                                    </div>
+                                </div>
                                 </li>
                             </ul>
                 
@@ -465,10 +485,27 @@
             </div>
         
         </footer>
+
+
+        <!--Модальне вікно-->
+
+
+        <div class="backdrop is-hidden" data-modal>
+        
+            <div class="modal">
+                <button data-modal-close aria-label="button" class="close-button">
+                    <img class="icon-close" src="./images/close.svg" alt="Закрити">
+                </button>
+        
+            </div>
+        
+        
+        </div>
+        
+        
     
-
-
+    <script src="./js/modal.js"></script>
 
 </body>
 
-</html>
+</html> 
