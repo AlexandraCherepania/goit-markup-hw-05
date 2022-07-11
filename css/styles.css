@@ -87,7 +87,7 @@ ul  {
 }
  button {
      cursor: pointer;
-     transition: var(--animation-time);
+     
  }
 
 
