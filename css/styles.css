@@ -867,10 +867,9 @@ svg:focus {
     line-height: 1.6;
     background-color: #F5F4FA;
     border: 0px;
-    transition: background-color var(--animation-time);
-    transition: color var(--animation-time);
-    transition: box-shadow var(--animation-time);
-    transition: border-radius var(--animation-time);
+    transition: background-color var(--transition-duration) var(--timing-function),
+        color var(--transition-duration) var(--timing-function),
+        box-shadow var(--transition-duration) var(--timing-function);
 
 }
 
